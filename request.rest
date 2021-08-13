@@ -1,0 +1,25 @@
+GET http://localhost:2000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1hbCIsImlhdCI6MTYyODg1MzM1OSwiZXhwIjoxNjI4ODUzNDE5fQ.zc9ntxflH0PCxbgUZYDtkhzWW04l2pm7oW1ki5B7R14
+###post
+POST http://localhost:2000/login
+Content-Type:application/json
+
+{
+   "userName":"amal"
+}
+
+###logout
+DELETE http://localhost:2000/logout
+Content-Type:application/json
+
+{
+   "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1hbCIsImlhdCI6MTYyODg1MzU4MX0.rowiitk3DXfgiDaPiUd2R_GFYUp4wf156flNFPJhg9E"
+}
+
+###
+POST http://localhost:2000/token
+Content-Type:application/json
+
+{
+   "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1hbCIsImlhdCI6MTYyODg1MzU4MX0.rowiitk3DXfgiDaPiUd2R_GFYUp4wf156flNFPJhg9E"
+}
